@@ -1,0 +1,17 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    /* this font family is inherited on all text in the page */
+    font-size: 14px;
+}
+body{
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    /* font-family: 'Open Sans', sans-serif; , we can also use this here also */
+
+    background-color: rgb(248, 248, 248);
+}
+
+/* if the modification is done in specific class in CSS, so it will have higher 
+prioty over inheritance in other words you can say it will override general style*/

@@ -1,0 +1,176 @@
+  .thumbnail{
+    width: 100%;
+    /* object-fit: cover; It covers the image */
+    /* object-position: right; IT shows the right position of image */
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+    padding: 2px 2px 2px 2px; */
+  }
+  .search{
+    font-size: 20px;
+    display: block;
+  }
+
+  .profile-picture{
+    width: 38px;
+    border-radius: 50px;
+  }
+  .any{
+    margin-top: 7px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+  }
+  .video-title{
+    margin-top: 0;
+    padding-left: 8px;
+  }
+  .author{
+    padding-left: 8px;
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+  .stats{
+    padding-left: 8px;
+    margin-top: 2px;
+  }
+
+  .thumbnail-row{
+    margin-bottom: 0;
+    position: relative;
+    z-index: 0;
+  }
+
+  .video-time{
+    font-size: 12px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    position: absolute;
+    padding: 2px 4px 2px 4px;
+    border-radius: 2px;
+    bottom: 10px;
+    right: 8px;
+  }
+
+  .thumbnail-row2{
+    margin-bottom: 0;
+    position: relative;
+    z-index: 0;
+
+    /* this rule doesn't apply to position static means it will not overlay the image that is in the case here is relative */
+  }
+
+  .video-time2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+    padding: 2px 4px 2px 4px;
+  }
+
+
+  .sTitle{
+    display: inline-block;
+  }
+  .profile-picture2{
+    width: 38px;
+    border-radius: 50px;
+  }
+  .any2{
+    margin-top: 7px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+  }
+  .video-title2{
+    padding-left: 8px;
+    margin-top: 0;
+  }
+  .author2{
+    padding-left: 8px;
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+  .stats2{
+    padding-left: 8px;
+    margin-top: 2px;
+  }
+
+  .video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    
+    /* text-decoration: underline; */
+    
+    /* this underline will show on everything which is a property of .video-grid this is called inheritance.
+    However this is not possible always by going on and on inside, so mostly inheritance works on text property. It doesn't affect things like border,margin,padding.*/
+  }
+
+  @media(max-width:750px){
+    /*  once the screen size gets smaller than 750px this will activate*/
+    .video-grid{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media(min-width:751px) and (max-width:999px){
+    /* between these range this will activate */
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media(min-width:1000px){
+    /* once the screen size hits 1000px this will activate  */
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  .channel-hov{
+    position: relative;
+    cursor: pointer;
+  }
+
+.channel-hov .wrap-channel{
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    top: -70;
+    border-radius: 4px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    border-style: none;
+
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.15);
+}
+
+.channel-hov:hover .wrap-channel{
+  opacity: 1;
+}
+
+.box-s{
+  width: 38px;
+  border-radius: 50px;
+}
+
+.box-text{
+  padding-left: 7px; 
+}

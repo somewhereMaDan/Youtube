@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/video.css">
+<link rel="stylesheet" href="styles/general.css">
+<link rel="stylesheet" href="styles/header.css">
+    <title>youtube.com</title>
+
+  </head>
+
+    <body style="height: 5000px;">
+
+      <header></header>
+      <nav></nav>
+      <main></main>
+      <!-- these three are semantics elements, these works the same the div element except they are used for screen readers like robots also it gives a clear meaning -->
+
+      <header class="header">
+        <div class="left-section"> <img class="hamburger-menu" src="icons/menu.svg"> <img class="youtube-logo" src="icons/youtube-logo.svg" > </div>
+
+        <div class="middle-section">
+          <input class="search-bar" type="text" placeholder="Search">
+
+          <button class="search-button"> <img class="search-icon" src="icons/search.svg" > 
+          <div class="tooltip">Search</div> </button>
+
+          <button class="voice-search-button"> <img class="voice-icon" src="icons/voice-search-icon.svg" > 
+          <div class="tooltip">Search with your voice</div></button>
+        </div>
+
+        <div class="right-section"> 
+          <div class="upload-icon-container"> <img class="upload-icon" src="icons/upload.svg" > <div class="tooltip"> Create </div> 
+        </div>
+
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg" > 
+        <div class="notifications-count">
+          <img class="notifications-icon" src="icons/notifications.svg" >
+          <div class="count">3</div>
+        </div>
+        <img class="current-user-picture" src="icons/unnamed (1).jpg" > </div>
+      
+      </header>
+
+      <!-- wherever we have used header or nav or main it will work the same as div, it's just they have a special meaning
+      like header means it represents header and nav represents navigation and main means it should have main part of the website  -->
+      <nav class="sidebar">
+        <div class="sidebar-link"> <img  src="icons/home.svg" > <div>Home</div> </div> 
+        
+        <div class="sidebar-link"> <img  src="icons/explore.svg "> <div>Explore</div> </div>
+
+        <div class="sidebar-link"> <img  src="icons/subscriptions.svg" > <div>Subscriptions</div> </div> 
+
+        <div class="sidebar-link"> <img  src="icons/originals.svg" > <div>Originals</div> </div>
+
+        <div class="sidebar-link"> <img  src="icons/youtube-music.svg" > <div>Music</div> </div>
+
+        <div class="sidebar-link"> <img src="icons/library.svg" > <div>Library</div> </div>
+      
+      </nav>
+
+      <main>
+        <!-- video grid are also known as section of our main content, so we are changing the div to section element-->
+          <section class="video-grid">
+
+            <div class = "video-preview">
+    
+              <div class="thumbnail-row">
+                <img class="thumbnail" src="Thumbnails/hq720 (1).webp" >
+                <div class="video-time">14:32</div> 
+              </div>
+      
+            <div class="any">
+    
+              <div class="channel-picture">
+                <div class="channel-hov">
+                  <img class="profile-picture" src="Thumbnails/unnamed.jpg" > 
+                  
+                  <div class="wrap-channel"> 
+                      <div class="box-image"> <img class="box-s" src="Thumbnails/unnamed.jpg" ></div>  
+                      <div class="box-text"> <b>Sentinals</b> <br> 15M subscribers </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="video-info">
+                <p class="video-title">
+                  Industry Baby | AMV | Anime MV 
+                </p>
+                <p class="author">
+                  Moonshadow
+                </p>
+                <p class="stats">
+                  266,522 views	&middot;
+                  Sep 11, 2021
+                </p>
+              </div>
+              
+            </div>
+          </div>
+      
+        <div class="second">
+          <div class="thumbnail-row2">
+            <img class="thumbnail" src="Thumbnails/hq720.webp" alt=""> 
+            <div class="video-time2">11:37</div> 
+          </div>
+      
+          <div class="any2"> 
+      
+            <div class="channel-picture2">
+              <img class="profile-picture2" src="Thumbnails/second.jpg" alt="">
+            </div>
+            <div class="video-info2">
+              <p class="video-title2">
+                Virginity Syndrome | AMV | Anime  
+              </p>
+              <p class="author2">
+                Moonshadow
+              </p>
+              <p class="stats">
+                1,416,386 views	&middot;
+                Mar 21, 2021
+              </p>
+              </div>      
+            </div>
+          </div>
+      
+      
+          <div class = "video-preview">
+      
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/hq720 (1).webp" alt=""> 
+              <div class="video-time">14:32</div> 
+            </div>
+      
+          <div class="any">
+      
+            <div class="channel-picture">
+              <img class="profile-picture" src="Thumbnails/unnamed.jpg" alt="">
+            </div>
+      
+            <div class="video-info">
+              <p class="video-title">
+                Industry Baby | AMV | Anime MV 
+              </p>
+              <p class="author">
+                Moonshadow
+              </p>
+              <p class="stats">
+                266,522 views	&middot;
+                Sep 11, 2021
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      
+      <div class="second">
+        <div class="thumbnail-row2">
+          <img class="thumbnail" src="Thumbnails/hq720.webp" alt=""> 
+          <div class="video-time2">11:37</div> 
+        </div>
+      
+        <div class="any2"> 
+      
+          <div class="channel-picture2">
+            <img class="profile-picture2" src="Thumbnails/second.jpg" alt="">
+          </div>
+          <div class="video-info2">
+            <p class="video-title2">
+              Virginity Syndrome | AMV | Anime  
+            </p>
+            <p class="author2">
+              Moonshadow
+            </p>
+            <p class="stats">
+              1,416,386 views	&middot;
+              Mar 21, 2021
+            </p>
+            </div>      
+          </div>
+        </div>
+        
+        
+        <div class = "video-preview">
+      
+              <div class="thumbnail-row">
+                <img class="thumbnail" src="Thumbnails/hq720 (1).webp" alt=""> 
+                <div class="video-time">14:32</div> 
+              </div>
+      
+            <div class="any">
+      
+              <div class="channel-picture">
+                <img class="profile-picture" src="Thumbnails/unnamed.jpg" alt="">
+              </div>
+      
+              <div class="video-info">
+                <p class="video-title">
+                  Industry Baby | AMV | Anime MV 
+                </p>
+                <p class="author">
+                  Moonshadow
+                </p>
+                <p class="stats">
+                  266,522 views	&middot;
+                  Sep 11, 2021
+                </p>
+              </div>
+              
+            </div>
+          </div>
+      
+        <div class="second">
+          <div class="thumbnail-row2">
+            <img class="thumbnail" src="Thumbnails/hq720.webp" alt=""> 
+            <div class="video-time2">11:37</div> 
+          </div>
+      
+          <div class="any2"> 
+      
+            <div class="channel-picture2">
+              <img class="profile-picture2" src="Thumbnails/second.jpg" alt="">
+            </div>
+            <div class="video-info2">
+              <p class="video-title2">
+                Virginity Syndrome | AMV | Anime  
+              </p>
+              <p class="author2">
+                Moonshadow
+              </p>
+              <p class="stats">
+                1,416,386 views	&middot;
+                Mar 21, 2021
+              </p>
+            </div>      
+            </div>
+          </div>
+    
+          <div class = "video-preview">
+    
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/hq720 (1).webp" alt=""> 
+              <div class="video-time">14:32</div> 
+            </div>
+    
+          <div class="any">
+    
+            <div class="channel-picture">
+              <img class="profile-picture" src="Thumbnails/unnamed.jpg" alt="">
+            </div>
+    
+            <div class="video-info">
+              <p class="video-title">
+                Industry Baby | AMV | Anime MV 
+              </p>
+              <p class="author">
+                Moonshadow
+              </p>
+              <p class="stats">
+                266,522 views	&middot;
+                Sep 11, 2021
+              </p>
+            </div>
+            
+          </div>
+        </div>
+    
+      <div class="second">
+        <div class="thumbnail-row2">
+          <img class="thumbnail" src="Thumbnails/hq720.webp" alt=""> 
+          <div class="video-time2">11:37</div> 
+        </div>
+    
+        <div class="any2"> 
+    
+          <div class="channel-picture2">
+            <img class="profile-picture2" src="Thumbnails/second.jpg" alt="">
+          </div>
+          <div class="video-info2">
+            <p class="video-title2">
+              Virginity Syndrome | AMV | Anime  
+            </p>
+            <p class="author2">
+              Moonshadow
+            </p>
+            <p class="stats">
+              1,416,386 views	&middot;
+              Mar 21, 2021
+            </p>
+            </div>      
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

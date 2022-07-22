@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Grid Practice</title>
+    </head>
+
+    <body style="padding-bottom: 1000px;">
+        <div style="
+            margin-top: 30px;
+            display: grid; 
+            grid-template-columns: 100px 100px 200px;">
+
+            <div style="background-color: lightblue;"> One </div>
+            <div style="background-color: lightcyan;"> Two <p>Text</p></div>
+            <div style="background-color: lightblue;"> One </div>
+        </div>
+
+        <div style="
+            margin-top: 30px;
+            display: grid; 
+            grid-template-columns: 100px 100px 200px;">
+
+            <div style="background-color: lightblue;"> One </div>
+            <div style="background-color: lightcyan;"> Two <p>Text</p></div>
+            <div style="background-color: lightblue;"> One </div>
+        </div>
+
+        <!-- Grid maintains the height of the column perfectly, but if the 
+        given values of certain colums are larger than that like 100px 100px 
+        are only two columns then if we create third div then it will go to the next row -->
+    
+        <div style="
+            margin-top: 30px;
+            display: grid; 
+            grid-template-columns: 100px 1fr ;"> 
+            <!-- fr means (freeSpace) it will take the remaining amount of space in the grid  -->
+
+            <div style="background-color: lightblue;"> 100px </div>
+            <div style="background-color: lightcyan"> 1fr </div>
+        </div>
+
+        <div style="
+            margin-top: 30px;
+            display: grid; 
+            height: 200px;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 17px;
+            row-gap: 25px;"> 
+            <!-- fr means (freeSpace) it will take the remaining amount of space in the grid  -->
+
+            <div style="background-color: lightblue;"> 100px </div>
+            <div style="background-color: lightcyan"> 1fr </div>
+            <div style="background-color: lightgreen"> 1fr </div>
+
+            <div style="background-color: lightgreen;"> 100px </div>
+            <div style="background-color: lightblue"> 1fr </div>
+            <div style="background-color: lightcyan"> 1fr </div>
+
+            <!-- 1fr 1fr means they will take equal amount of free space it's like
+            1:1, if we'll give 1fr 2fr it will mean 1:2 space -->
+        </div>
+
+    </body>
+</html>
